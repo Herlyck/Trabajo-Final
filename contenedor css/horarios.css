@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+    display: grid;
+    background-image: url(../Imagenes/cine4.jpg);
+}
+
+
+#tabla-Horarios{
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid #0ad647;
+    table-layout: fixed;
+    width: 100%;
+    color:red;
+    
+}
+
+td,th {
+    border: 1px solid #0ad647; 
+    padding: 10px 5px;      
+    word-wrap: break-word;  /* Por si una palabra es muy larga, que no rompa la tabla */
+}
+
+td:hover{
+    background-color: cornflowerblue;
+}
+th:hover{
+    background-color: yellow;
+}
+
+/* .inicio {
+    color:red;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    border: 2px solid rgb(6, 175, 28);
+    transition: color 1s ease;
+    
+}
+.inicio:visited{
+    color:red;
+}
+
+
+.inicio:hover{
+    color:cornflowerblue;
+} */
+
+
+
+

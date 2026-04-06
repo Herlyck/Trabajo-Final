@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    color: green;
+    display: grid;
+    margin:0px;
+}
+
+.inicio {
+    color:red;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    border: 2px solid rgb(6, 175, 28);
+    transition: color 1s ease;
+    
+}
+.inicio:visited{
+    color:red;
+}
+
+
+.inicio:hover{
+    color:cornflowerblue;
+}
