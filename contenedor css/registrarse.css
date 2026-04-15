@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(29, 25, 73);
+    color: yellow;
+    display:grid;
+    
+    place-content: center;
+    
+    
+   
+}
+
+
+#Formulario{
+    
+    display: grid;
+    padding: 20px;
+    border: 2px solid white;
+
+}
+
+#Formulario>input{
+    margin:0px 0px 10px 0px;
+}
+
+#Formulario>label{
+    margin:5px;
+}
+

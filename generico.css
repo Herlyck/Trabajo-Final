@@ -5,6 +5,7 @@ body{
     margin:0px;
 }
 
+
 .inicio {
     color:red;
     text-decoration: none;
@@ -22,3 +23,5 @@ body{
 .inicio:hover{
     color:cornflowerblue;
 }
+
+.inicio{background-color: rgb(212, 200, 19);}
