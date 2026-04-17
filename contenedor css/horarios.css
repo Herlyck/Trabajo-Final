@@ -6,10 +6,13 @@ body{
 
 
 #tabla-Horarios{
-    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    margin-top: 10px;
     border-collapse: collapse;
     border: 2px solid #0ad647;
-    table-layout: fixed;
+    /* table-layout: fixed; */
     width: 100%;
     color:red;
     width: 100vw;
@@ -17,8 +20,13 @@ body{
     
 }
 
+#tabla-Horarios>table{
+    border-collapse: collapse;
+    border: solid green 3px;
+}
+
 td,th {
-    border: 1px solid #0ad647; 
+    border: 2px solid #0ad647; 
     padding: 10px 5px;      
     word-wrap: break-word;  /* Por si una palabra es muy larga, que no rompa la tabla */
 }
@@ -30,6 +38,10 @@ th:hover{
     background-color: yellow;
 }
 
+#lunes{
+    grid-column: 1;
+    grid-row: 1;
+}
 
 
 

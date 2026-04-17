@@ -2,20 +2,18 @@ body{
     background-color: rgb(29, 25, 73);
     color: yellow;
     display:grid;
-    
-    place-content: center;
-    
-    
    
 }
 
 
 #Formulario{
-    
     display: grid;
-    padding: 20px;
+    padding: 2px;
     border: 2px solid white;
-
+    place-content: center;
+    width:25vw;
+    height:60vh;
+    
 }
 
 #Formulario>input{
@@ -24,5 +22,11 @@ body{
 
 #Formulario>label{
     margin:5px;
+}
+
+#form{
+    display:grid;
+    justify-content: center;
+    
 }
 

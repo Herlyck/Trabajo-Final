@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(70, 5, 48);
+    display:grid;
+    
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 6px;
+    margin-top: 0px;
+    padding:2px;
+    justify-items: center;
+}
+
+header{
+    grid-row: 0;
+    grid-column: 1/5;
+    background-color: blue;
+    
+    margin-top: 0px;
+}
+
+#formulario-2{
+    display: grid;
+    padding: 2px;
+    border: 2px solid white;
+    place-content: center;
+    width:25vw;
+    height:60vh;
+    grid-template-columns: repeat(2,1fr);
+    align-content: space-evenly;
+    align-items: baseline;
+    justify-items: center;
+}
+
+#formulario-2>input{
+    margin:0px 0px 10px 0px;
+}
+
+#formulario-2>label{
+    margin:5px;
+}
+
+h2{
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#botonsede{
+    grid-column: 2;
+    grid-row:7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #grilla-izda{
+    grid-row:2;
+    grid-column: 1;
+}
+
+#grilla-medio{
+    grid-row:2;
+    grid-column: 2;
+}
+
+#grilla-mediocentro{
+    grid-row:2;
+    grid-column: 3;
+}
+
+#grilla-derecha{
+    grid-row:2;
+    grid-column: 4;
+}
+/* ----------------------------------------- */
+/* 
+#grilla-abajoizda{
+    grid-row:3;
+    grid-column: 1;
+}
+
+#grilla-abajomedio{
+    grid-row:3;
+    grid-column: 2;
+}
+
+#grilla-abajomediocentro{
+    grid-row:3;
+    grid-column: 3;
+}
+
+#grilla-abajoderecha{
+    grid-row:3;
+    grid-column: 4;
+}
+
+
+
+footer{
+    grid-row: 0;
+    grid-column: 1/5;
+    background-color: blue;
+    
+}
+
+
+
+
+header,footer{
+    justify-self: stretch;
+}  */
+header,footer{
+    justify-self: stretch;
+}  

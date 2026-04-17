@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <link rel="stylesheet" href="../generico.css">
-   <link rel="stylesheet" href="../contenedor css/registrarse.css">
+    <link rel="stylesheet" href="../generico.css">
+    <link rel="stylesheet" href="../contenedor css/registrarse.css">
     <title>Registro</title>
 </head>
+
 <body>
     <header>
         <a class="inicio" href="../index.html">Inicio</a>
         <a class="inicio" href="cartelera.html">Cartelera</a>
+        <a class="inicio" href="../contenedor html/horarios.html">Horario</a>
     </header>
-    
-    <h1>bienvenido al registro</h1>
-    <form id="Formulario">
+    <div id="form">
+        <h1>bienvenido al registro</h1>
+        <form id="Formulario">
 
 
 
-    <label for="Nombre">Nombre</label>
-    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
-    
-    <label for="Apellido">Apellido</label>
-    <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
-    
-    <label for="Email">Email</label>
-    <input required type="email" name="Email" id="Email" placeholder="Email@" required >
-    
-    <label for="Usuario">Usuario</label>
-    <input type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
 
-    <label for="contrasenia">Contraseña</label>
-    <input type="password" name="contrasenia" id="contrasenia" placeholder="contraseña" required>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
 
-   
-    
-    <div class="contenedor-radio">
-        <label for="acepta-condicion">Acepta condiciones</label>
-        <input type="radio" name="acepta-condicion" id="acepta-condicion" required>
-        <input onclick="enviarRegistro()" type="submit" value="enviar">
+            <label for="Email">Email</label>
+            <input required type="email" name="Email" id="Email" placeholder="Email@" required>
+
+            <label for="Usuario">Usuario</label>
+            <input type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
+
+            <label for="contrasenia">Contraseña</label>
+            <input type="password" name="contrasenia" id="contrasenia" placeholder="contraseña" required>
+
+
+
+            <div class="contenedor-radio">
+                <label for="acepta-condicion">Acepta condiciones</label>
+                <input type="radio" name="acepta-condicion" id="acepta-condicion" required>
+                <input onclick="enviarRegistro()" type="submit" value="enviar">
+            </div>
+        </form>
     </div>
 
 
 
-    </form>
-    
+
+
 
 
 
 </body>
+
 </html>
