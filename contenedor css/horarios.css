@@ -1,6 +1,8 @@
 body{
     margin: 0px;
     display: grid;
+    
+
     background-image: url(../Imagenes/cine4.jpg);
 }
 
@@ -12,7 +14,7 @@ body{
     margin-top: 10px;
     border-collapse: collapse;
     border: 2px solid #0ad647;
-    /* table-layout: fixed; */
+    
     width: 100%;
     color:red;
     width: 100vw;
@@ -23,12 +25,13 @@ body{
 #tabla-Horarios>table{
     border-collapse: collapse;
     border: solid green 3px;
+    height: 66.3vh;
 }
 
 td,th {
     border: 2px solid #0ad647; 
     padding: 10px 5px;      
-    word-wrap: break-word;  /* Por si una palabra es muy larga, que no rompa la tabla */
+    word-wrap: break-word;  
 }
 
 td:hover{
@@ -39,11 +42,40 @@ th:hover{
 }
 
 #lunes{
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
 }
 
+#mario{
+    grid-column: 1;
+    grid-row:1;
 
+}
 
+#seleccionDia{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+}
 
+#seleccionDia>input{
+    margin:5px;
 
+}
+
+#cantEntradas{
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+    margin-left: 15px;
+    
+}
+
+#boton-seleccionar{
+   margin: 5px 15px 0px 0px;
+   
+   
+}

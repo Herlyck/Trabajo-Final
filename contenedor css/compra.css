@@ -52,63 +52,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* #grilla-izda{
-    grid-row:2;
-    grid-column: 1;
-}
-
-#grilla-medio{
-    grid-row:2;
-    grid-column: 2;
-}
-
-#grilla-mediocentro{
-    grid-row:2;
-    grid-column: 3;
-}
-
-#grilla-derecha{
-    grid-row:2;
-    grid-column: 4;
-}
-/* ----------------------------------------- */
-/* 
-#grilla-abajoizda{
-    grid-row:3;
-    grid-column: 1;
-}
-
-#grilla-abajomedio{
-    grid-row:3;
-    grid-column: 2;
-}
-
-#grilla-abajomediocentro{
-    grid-row:3;
-    grid-column: 3;
-}
-
-#grilla-abajoderecha{
-    grid-row:3;
-    grid-column: 4;
-}
-
-
-
 footer{
     grid-row: 0;
     grid-column: 1/5;
@@ -116,12 +59,6 @@ footer{
     
 }
 
-
-
-
-header,footer{
-    justify-self: stretch;
-}  */
 header,footer{
     justify-self: stretch;
 }  
