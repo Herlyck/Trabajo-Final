@@ -52,7 +52,7 @@ th:hover{
 
 }
 
-#seleccionDia{
+.seleccionDia{
     display: grid;
     grid-column: 2;
     grid-row: 1;
@@ -61,12 +61,12 @@ th:hover{
     align-items: baseline;
 }
 
-#seleccionDia>input{
+.seleccionDia>input{
     margin:5px;
 
 }
 
-#cantEntradas{
+.cantEntradas{
     justify-content: center;
     justify-items: center;
     align-items: baseline;

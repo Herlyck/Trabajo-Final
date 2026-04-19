@@ -1,0 +1,19 @@
+.ticket-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-style: double;
+    border-radius: 2px;
+    width:30vw;
+    margin-left: 33.3vw;
+    font-family: 'cascade code';
+    padding:10px;
+    color:rgb(181, 192, 22)
+    
+}
+
+.ticket-container>input{
+    margin: 2px 0px 6px 0px;
+
+}

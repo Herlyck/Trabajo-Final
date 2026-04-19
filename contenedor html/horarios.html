@@ -29,7 +29,7 @@
                 <tr>
                     <td>09:00hs</td>
                     <td>
-                        <div id="seleccionDia">
+                        <div class="seleccionDia">
                             <label for="pelicula">Lunes</label>
                             <input type="radio" name="pelicula" id="pelicula" value="1">
                             <label for="pelicula">Jueves</label>
@@ -39,15 +39,18 @@
 
                     </td>
                     <td>
-                        <div id="cantEntradas">
+                        <div class="cantEntradas">
                             <label for="cantidad-entradas"></label>
-                            <select name="entradas" id="cantidad-entradas">
+                            <select name="entradas" class="cantidad-entradas">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                                 <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
                             </select>
                             <input id="boton-seleccionar" type="button" value="Seleccionar">
                         </div>
@@ -60,14 +63,69 @@
 
                 <tr>
                     <td>12.30hs</td>
-                    <td>Martes y viernes</td>
+                    <td>
+                        <div class="seleccionDia">
+                            <label for="pelicula">Martes</label>
+                            <input type="radio" name="pelicula" id="pelicula" value="3">
+                            <label for="pelicula">Viernes</label>
+                            <input type="radio" name="pelicula" id="pelicula" value="4">
+                            
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="cantEntradas">
+                            <label for="cantidad-entradas"></label>
+                            <select name="entradas" class="cantidad-entradas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <input id="boton-seleccionar" type="button" value="Seleccionar" >
+                        </div>
+                    </td>
+                    
 
 
                 </tr>
 
                 <tr>
                     <td>16.30hs</td>
-                    <td>miercoles sabados y domingos</td>
+                    <td>
+                        <div class="seleccionDia">
+                            <label for="pelicula">Miercoles</label>
+                            <input type="radio" name="pelicula" id="pelicula" value="5">
+                            <label for="pelicula">Sabado</label>
+                            <input type="radio" name="pelicula" id="pelicula" value="6">
+                            <label for="pelicula">Domingos</label>
+                            <input type="radio" name="pelicula" id="pelicula" value="7">
+                            
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="cantEntradas">
+                            <label for="cantidad-entradas"></label>
+                            <select name="entradas" class="cantidad-entradas">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>
+                            <input id="boton-seleccionar" type="button" value="Seleccionar" >
+                        </div>
+                    </td>
 
 
                 </tr>
@@ -78,12 +136,13 @@
             </tfoot>
         </table>
 
-
-
     </div>
+
+
     <footer>
 
     </footer>
+    <script src="../contenedor js/horario.js"></script>
 </body>
 
 </html>
