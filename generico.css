@@ -25,3 +25,66 @@ body{
 }
 
 .inicio{background-color: rgb(212, 200, 19);}
+
+
+
+/* .carousel-container {
+    width: 10%;
+    max-width: 500px;
+    height: 300px;
+    margin: 30px auto;
+    overflow: hidden; 
+    border: 3px solid rgb(6, 175, 28);
+    position: relative;
+    background-color: #111;
+  
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s ease-in-out;
+}
+
+.slide {
+    
+    min-width: 100%; 
+    height: 100%;
+    object-fit: contain;
+} */
+
+.carousel-container {
+    /* Antes: width 60% y max-width 500px */
+    width: 60vw;          /* 60% del ancho de cualquier pantalla */
+    max-width: 50vw;     /* Limitamos el crecimiento en pantallas muy grandes */
+    
+    /* Antes: height 300px */
+    height: 40vh;        /* 40% de la altura de la pantalla */
+    
+    margin: 4vh auto;    /* Margen superior/inferior relativo a la altura */
+    overflow: hidden;
+    /* border: 0.4vw solid rgb(6, 175, 28);  */
+    position: relative;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s ease-in-out;
+}
+
+.slide {
+    /* IMPORTANTE: min-width debe ser 100% para que el JS mueva 
+       exactamente una "ventana" de carrusel a la vez */
+    min-width: 100%; 
+    height: 100%;
+    object-fit: contain;
+}
+
+
