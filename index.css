@@ -1,0 +1,25 @@
+body{
+    background-image: url("Imagenes/cine4.jpg");
+}
+
+#bienvenida{
+    text-align: center;
+    color:red;
+}
+
+.trailer{
+    border-collapse: collapse;
+    color:red;
+    place-items: center;
+    
+}
+.trailer img {
+    max-width: 10vw;    /* La imagen ocupará el ancho del td */
+     /* O el tamaño exacto que desees que tenga */
+    height: auto;   /* Mantiene la proporción */
+}
+
+#ubicacion{
+    color: red;
+}
+

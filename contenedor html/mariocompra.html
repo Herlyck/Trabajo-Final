@@ -9,40 +9,46 @@
     <title>Document</title>
 </head>
 
-<header>
-    <a class="inicio" href="contenedor html/horarios.html">Horarios</a>
-    <a class="inicio" href="../contenedor html/cartelera.html">Cartelera</a>
-    <a class="inicio" href="../contenedor html/registrarse.html">Registro</a>
-
-</header>
 <body>
-    <img src="../Imagenes/MarioGalaxy.png" alt="mario">
-    
+    <header>
+        <a class="inicio" href="contenedor html/horarios.html">Horarios</a>
+        <a class="inicio" href="../contenedor html/cartelera.html">Cartelera</a>
+        <a class="inicio" href="../contenedor html/registrarse.html">Registro</a>
+
+    </header>
+
+    <img id="imagen-peli" src="" alt="Póster de la película">
+    <!-- <img src="../Imagenes/MarioGalaxy.png" alt="mario"> -->
+
     <form action="../contenedor html/horarios.html" id="formulario-2">
         <h2>Elegi tu cine principal</h2>
-        
+
         <label for="cine">Abasto</label>
-        <input type="radio" name="cine" id="cine" value="1" required>
-        
+        <input type="radio" name="cine" id="cine" value="Abasto" required>
+
         <label for="cine">Caballito</label>
-        <input type="radio" name="cine" id="cine" value="2" required>
-        
+        <input type="radio" name="cine" id="cine" value="Caballito" required>
+
         <label for="cine">Recoleta</label>
-        <input type="radio" name="cine" id="cine" value="3" required>
+        <input type="radio" name="cine" id="cine" value="Recoleta" required>
 
         <label for="cine">Palermo</label>
-        <input type="radio" name="cine" id="cine" value="4" required>
-        
+        <input type="radio" name="cine" id="cine" value="Palermo" required>
+
         <label for="cine">Obelisco</label>
-        <input type="radio" name="cine" id="cine" value="5" required>
+        <input type="radio" name="cine" id="cine" value="Obelisco" required>
 
         <button id="botonsede" type="submit">enviar</button>
+        <button id="volver" type="button" onclick="botonatras()">Volver</button>
+        <script src="../contenedor js/boton-atras.js">
+
+        </script>
 
     </form>
     <div>
-        
+
     </div>
-    
+
     <script src="../contenedor js/sede.js">
 
     </script>

@@ -51,6 +51,9 @@ h2{
 #botonsede{
     grid-column: 2;
     grid-row:7;
+    width: 10vh;
+    height: 3.5vh;
+
 }
 
 
@@ -65,3 +68,8 @@ footer{
 header,footer{
     justify-self: stretch;
 }  
+
+#volver{
+    width: 10vh;
+    height: 3.5vh;
+}
