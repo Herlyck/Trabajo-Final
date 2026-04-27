@@ -13,7 +13,7 @@ body{
     grid-auto-rows: minmax(100px,auto);
     margin-top: 10px;
     border-collapse: collapse;
-    border: 2px solid #0ad647;
+    /* border: 2px solid #0ad647; */
     
     width: 100%;
     color:red;
@@ -25,7 +25,7 @@ body{
 #tabla-Horarios>table{
     border-collapse: collapse;
     border: solid green 3px;
-    height: 66.3vh;
+    height: 46.3vh;
 }
 
 td,th {
