@@ -65,4 +65,26 @@ body{
 }
 
 
+/* Estilo para que parezca un enlace del menú */
 
+    
+
+
+.boton-header:hover {
+    background-color: white;
+    color: rgb(218, 9, 9);
+}
+
+
+.boton-header {
+    background: none;
+    border: 1px solid rgb(228, 12, 12);
+    color: rgb(202, 1, 1);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none; /* El JS lo pondrá en inline-block */
+    margin-left: 10px;
+}

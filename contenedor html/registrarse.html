@@ -11,13 +11,11 @@
     <header>
         <a class="inicio" href="../index.html">Inicio</a>
         <a class="inicio" href="cartelera.html">Cartelera</a>
-       
     </header>
+    
     <div id="form">
         <h1>Bienvenido al registro</h1>
-        <form action="../index.html" id="Formulario">
-
-
+        <form id="Formulario" onsubmit="event.preventDefault(); enviarRegistro();">
 
             <label for="Nombre">Nombre</label>
             <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
@@ -26,7 +24,7 @@
             <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
 
             <label for="Email">Email</label>
-            <input required type="email" name="Email" id="Email" placeholder="Email@" required>
+            <input type="email" name="Email" id="Email" placeholder="Email@" required>
 
             <label for="Usuario">Usuario</label>
             <input type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
@@ -34,23 +32,16 @@
             <label for="contrasenia">Contraseña</label>
             <input type="password" name="contrasenia" id="contrasenia" placeholder="contraseña" required>
 
-
-
             <div class="contenedor-radio">
                 <label for="acepta-condicion">Acepta condiciones</label>
-                <input type="radio" name="acepta-condicion" id="acepta-condicion" required>
-                <input onclick="enviarRegistro()" type="submit" value="enviar">
+                <input type="checkbox" name="acepta-condicion" id="acepta-condicion" required>
+                
+                <input type="submit" value="Enviar">
             </div>
         </form>
     </div>
 
-
-
-
-
-
-
-
+    <script src="../contenedor js/registro.js"></script>
 </body>
 
 </html>
