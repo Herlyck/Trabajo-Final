@@ -55,6 +55,14 @@ body{
     height: 100%;
     transition: transform 1.2s ease-in-out;
 }
+/* Agregamos esto para que el link no rompa el ancho del carrusel */
+.carousel-track a {
+    min-width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .slide {
     /* IMPORTANTE: min-width debe ser 100% para que el JS mueva 
@@ -80,11 +88,12 @@ body{
     background: none;
     border: 1px solid rgb(228, 12, 12);
     color: rgb(202, 1, 1);
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 5px 15px;
+    font-size: 2.48vh;
+    border-radius: 0.46vh;
+    padding: 0.46vh 0.78vw;
     cursor: pointer;
     transition: 0.3s;
     display: none; /* El JS lo pondrá en inline-block */
-    margin-left: 10px;
+    margin-left: 0.52vw;
+    float:right;
 }

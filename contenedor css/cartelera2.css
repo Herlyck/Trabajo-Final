@@ -6,7 +6,7 @@ body{
     grid-auto-rows: minmax(100px,auto);
     gap: 6px;
     margin-top: 0px;
-    padding:2px;
+    
     justify-items: center;
 }
 
