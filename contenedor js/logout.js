@@ -1,11 +1,15 @@
 function desloguear() {
-    // Limpiamos la sesión
+    // 1. Limpiamos TODO lo relacionado a la sesión
     sessionStorage.removeItem('usuarioLogueado');
     sessionStorage.removeItem('nombreUsuario');
     
+    // También limpiamos localStorage por si quedó basura de pruebas anteriores
+    localStorage.removeItem('usuarioLogueado');
+    
+    // Usamos el modal que creamos antes en lugar del alert (si ya lo tenés cargado)
     alert("Sesión cerrada correctamente.");
     
-    // Redirigir al index dependiendo de dónde estemos
+    // 2. Redirigir al index
     if (window.location.pathname.includes('contenedor html')) {
         window.location.href = "../index.html";
     } else {
@@ -13,27 +17,22 @@ function desloguear() {
     }
 }
 
-// Esta función se encarga de mostrar u ocultar el botón
-function actualizarBotonLogout() {
+function actualizarInterfazUsuario() {
     const btnLogout = document.getElementById('btn-logout');
+    const linkRegistro = document.querySelector('a[href*="registrarse.html"]'); // Busca el link de registro
     
-    // IMPORTANTE: Revisamos AMBOS por si acaso quedó algo en localStorage
-    const logueadoSession = sessionStorage.getItem('usuarioLogueado');
-    const logueadoLocal = localStorage.getItem('usuarioLogueado');
+    const logueado = sessionStorage.getItem('usuarioLogueado');
 
-    if (btnLogout) {
-        if (logueadoSession === "true" || logueadoLocal === "true") {
-            btnLogout.style.display = "inline-block";
-            console.log("Usuario detectado. Mostrando botón.");
-        } else {
-            btnLogout.style.display = "none";
-            console.log("No hay usuario. Botón oculto.");
-        }
+    if (logueado === "true") {
+        // --- USUARIO LOGUEADO ---
+        if (btnLogout) btnLogout.style.display = "inline-block";
+        if (linkRegistro) linkRegistro.style.display = "none"; // Ocultamos "Registro"
+    } else {
+        // --- USUARIO INVISIBLE ---
+        if (btnLogout) btnLogout.style.display = "none";
+        if (linkRegistro) linkRegistro.style.display = "inline-block"; // Mostramos "Registro"
     }
 }
 
-// Ejecutar cuando carga la página
-document.addEventListener('DOMContentLoaded', actualizarBotonLogout);
-
-// Ejecutar también inmediatamente por si el DOM ya cargó
-actualizarBotonLogout();
+// Ejecutar al cargar el documento
+document.addEventListener('DOMContentLoaded', actualizarInterfazUsuario);
