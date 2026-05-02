@@ -10,30 +10,15 @@ body{
     margin: 0px 0px 0px 0px;
 }
 
-header{
-    grid-row: 0;
+header,footer{
+    justify-self: stretch;
+    background-color: rgb(10,135,236);
     grid-column: 1/5;
-    background-color: rgb(10, 135, 236);
     
-    margin-top: 0px;
 }
-
-
-
-/* ----------------------------------------- */
-
-
 
 footer>h1.derechos{
     float: right;
-}
-
-footer{
-    grid-row: 0;
-    grid-column: 1/5;
-    background-color:rgb(10, 135, 236);
-    
-    
 }
 
 #siguiente{
@@ -43,10 +28,5 @@ footer{
     grid-row: 4; 
     margin-right: -7vw;
     margin-top:2vh;
-    
-    
 }
 
-header,footer{
-    justify-self: stretch;
-}

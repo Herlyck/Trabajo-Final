@@ -3,34 +3,25 @@ body{
     display:grid;
     
     grid-template-columns:repeat(4,1fr);
-    grid-auto-rows: minmax(100px,auto);
+    /* grid-auto-rows: minmax(100px,auto); */
+    grid-template-rows: 20vh 80vh;
     gap: 6px;
     margin-top: 0px;
-    
     justify-items: center;
 }
 
-header{
-    grid-row: 0;
+header,footer{
+    justify-self: stretch;
+    background-color: rgb(10,135,236);
     grid-column: 1/5;
-    background-color: blue;
-    
-    margin-top: 0px;
+
 }
-
-
 
 
 footer>h1.derechos{
     float: right;
 }
 
-footer{
-    grid-row: 0;
-    grid-column: 1/5;
-    background-color: blue;
-    
-}
 
 #boton-atras{
     width: 5vw;
@@ -43,6 +34,3 @@ footer{
     
 }
 
-header,footer{
-    justify-self: stretch;
-}

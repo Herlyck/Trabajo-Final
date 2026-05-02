@@ -15,17 +15,20 @@ body{
     border-collapse: collapse;
     /* border: 2px solid #0ad647; */
     
-    width: 100%;
+    width: 100vw;
     color:red;
     width: 100vw;
     height: 100vh;
+    justify-items: end;
     
 }
 
 #tabla-Horarios>table{
     border-collapse: collapse;
     border: solid green 3px;
-    height: 46.3vh;
+    height: 69.9vh;
+    width: 50vh;
+    
 }
 
 td,th {
@@ -41,16 +44,6 @@ th:hover{
     background-color: yellow;
 }
 
-#lunes{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#mario{
-    grid-column: 1;
-    grid-row:1;
-
-}
 
 .seleccionDia{
     display: grid;
@@ -78,4 +71,16 @@ th:hover{
    margin: 5px 15px 0px 0px;
    
    
+}
+
+#eleccion-sede{
+    display:grid;
+    grid-row:2;
+    grid-column:2;
+    width: 7vw;
+    height: 5vh;
+    place-items: center;
+    place-content: center;
+    
+    
 }

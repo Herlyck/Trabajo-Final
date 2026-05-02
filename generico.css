@@ -27,9 +27,6 @@ body{
 .inicio{background-color: rgb(212, 200, 19);}
 
 
-
-
-
 .carousel-container {
     /* Antes: width 60% y max-width 500px */
     width: 60vw;          /* 60% del ancho de cualquier pantalla */
