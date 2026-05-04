@@ -11,10 +11,11 @@
 
 <body>
     <header>
-        
-        <a class="inicio" href="../contenedor html/cartelera.html">Cartelera</a>
-        <a class="inicio" href="../contenedor html/registrarse.html">Registro</a>
-
+    <a class="inicio" href="../index.html">Inicio</a> <!-- Agregué inicio por comodidad -->
+    <a class="inicio" href="../contenedor html/cartelera.html">Cartelera</a>
+    <a class="inicio" href="../contenedor html/registrarse.html">Registro</a>
+    <!-- Agregamos el botón de logout que faltaba aquí -->
+    <button id="btn-logout" onclick="desloguear()" class="boton-header" style="display: none;">Cerrar Sesión</button>
     </header>
 
     <img id="imagen-peli" src="" alt="Póster de la película">
@@ -50,8 +51,12 @@
     </div>
 
     <script src="../contenedor js/sede.js">
-
+      
     </script>
+    
+    <script src="../contenedor js/logout.js">
+
+    </script>  
 </body>
 
 </html>

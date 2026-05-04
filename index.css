@@ -1,29 +1,83 @@
-body{
+body {
     background-image: url("Imagenes/cine4.jpg");
+    display: grid;
+    grid-template-columns: (6, 1fr);
+    grid-template-rows: minmax(100px, auto);
+
+
 }
 
-#bienvenida{
-    text-align: center;
-    color:red;
-}
-
-.trailer{
+.trailer {
     border-collapse: collapse;
-    color:red;
-    place-items: center;
-    
-}
-.trailer img {
-    max-width: 10vw;    /* La imagen ocupará el ancho del td */
-     /* O el tamaño exacto que desees que tenga */
-    height: auto;   /* Mantiene la proporción */
-}
-
-#ubicacion{
     color: red;
+    place-items: center;
+
 }
 
-.titulo-trailer{
+.trailer img {
+    max-width: 10vw;
+
+    height: auto;
+}
+
+#ubicacion {
+    color: red;
+
+}
+
+.titulo-trailer {
     color: rgb(255, 147, 7);
 }
+
+#titulo-Principal {
     
+    background-color: rgb(212, 195, 35);
+    color: red;
+    text-align: center;
+    
+    /* Agrega esto: */
+    width: fit-content;   /* El fondo se ajusta al texto */
+    margin: 0 auto;       /* Esto lo centra en la pantalla */
+    padding: 10px 20px;   /* Un poco de espacio interno para que no quede pegado */
+
+}
+
+#ubicacion {
+
+    grid-row: 3;
+    background-color: rgb(212, 195, 35);
+    width: 21.93vw;
+    height: 24vh;
+}
+
+.direccion {
+    font-size: 3.0vh;
+}
+
+#contenido {
+    display: grid;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+footer>a {
+    font-size: 4vh;
+    font-family: cascadia-code;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: rgb(204, 207, 36);
+    /* background-color: aqua; */
+}
+
+footer>p {
+    grid-column: 6;
+    font-family: cascadia-code;
+    font-size: 4vh;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: rgb(204, 207, 36);
+
+}

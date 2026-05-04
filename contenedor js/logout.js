@@ -1,16 +1,13 @@
 function desloguear() {
-    // 1. Limpiamos TODO lo relacionado a la sesión
-    sessionStorage.removeItem('usuarioLogueado');
-    sessionStorage.removeItem('nombreUsuario');
-    
-    // También limpiamos localStorage por si quedó basura de pruebas anteriores
+    // 1. Limpiamos sesión
+    sessionStorage.clear();
     localStorage.removeItem('usuarioLogueado');
     
-    // Usamos el modal que creamos antes en lugar del alert (si ya lo tenés cargado)
     alert("Sesión cerrada correctamente.");
     
-    // 2. Redirigir al index
-    if (window.location.pathname.includes('contenedor html')) {
+    // 2. Redirección inteligente:
+    // Buscamos si estamos dentro de la carpeta "contenedor html"
+    if (window.location.pathname.includes('contenedor%20html') || window.location.pathname.includes('contenedor html')) {
         window.location.href = "../index.html";
     } else {
         window.location.href = "index.html";
@@ -19,20 +16,27 @@ function desloguear() {
 
 function actualizarInterfazUsuario() {
     const btnLogout = document.getElementById('btn-logout');
-    const linkRegistro = document.querySelector('a[href*="registrarse.html"]'); // Busca el link de registro
     
+    // Buscamos TODOS los enlaces que puedan ser el de registro
+    const links = document.querySelectorAll('a');
+    let linkRegistro = null;
+
+    links.forEach(l => {
+        if (l.href.includes('registrarse.html')) {
+            linkRegistro = l;
+        }
+    });
+
     const logueado = sessionStorage.getItem('usuarioLogueado');
 
     if (logueado === "true") {
-        // --- USUARIO LOGUEADO ---
         if (btnLogout) btnLogout.style.display = "inline-block";
-        if (linkRegistro) linkRegistro.style.display = "none"; // Ocultamos "Registro"
+        if (linkRegistro) linkRegistro.style.display = "none"; 
     } else {
-        // --- USUARIO INVISIBLE ---
         if (btnLogout) btnLogout.style.display = "none";
-        if (linkRegistro) linkRegistro.style.display = "inline-block"; // Mostramos "Registro"
+        if (linkRegistro) linkRegistro.style.display = "inline-block";
     }
 }
 
-// Ejecutar al cargar el documento
+// Ejecutar siempre al cargar
 document.addEventListener('DOMContentLoaded', actualizarInterfazUsuario);

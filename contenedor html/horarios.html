@@ -12,6 +12,9 @@
         <a class="inicio" href="../index.html">Inicio</a>
         <a class="inicio" href="cartelera.html">Cartelera</a>
         <a class="inicio" href="../contenedor html/registrarse.html">Registro</a>
+        <button id="btn-logout" onclick="desloguear()" class="boton-header" style="display: none;">Cerrar
+            Sesion</button>
+
     </header>
     <div id="tabla-Horarios">
         <img id="imagen-peli-horario" src="" alt="Cargando película...">
@@ -34,7 +37,7 @@
                             <input type="radio" name="pelicula" id="lunes09" value="Lunes">
                             <label for="jueves09">Jueves</label>
                             <input type="radio" name="pelicula" id="jueves09" value="Jueves">
-                            
+
                         </div>
 
                     </td>
@@ -69,7 +72,7 @@
                             <input type="radio" name="pelicula" id="martes12" value="martes">
                             <label for="viernes12">Viernes</label>
                             <input type="radio" name="pelicula" id="viernes12" value="viernes">
-                            
+
                         </div>
 
                     </td>
@@ -87,10 +90,10 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                             </select>
-                            <input id="boton-seleccionar" type="button" value="Seleccionar" >
+                            <input id="boton-seleccionar" type="button" value="Seleccionar">
                         </div>
                     </td>
-                    
+
 
 
                 </tr>
@@ -105,7 +108,7 @@
                             <input type="radio" name="pelicula" id="sabado16" value="Sabado">
                             <label for="domingo16">Domingos</label>
                             <input type="radio" name="pelicula" id="domingo16" value="Domingo">
-                            
+
                         </div>
 
                     </td>
@@ -123,20 +126,20 @@
                                 <option value="8">8</option>
                                 <option value="9">9</option>
                             </select>
-                            <input id="boton-seleccionar" type="button" value="Seleccionar" >
+                            <input id="boton-seleccionar" type="button" value="Seleccionar">
                         </div>
                     </td>
 
 
                 </tr>
-                
-               
+
+
             </tbody>
             <tfoot>
 
             </tfoot>
         </table>
-        
+
     </div>
 
 
@@ -144,7 +147,7 @@
 
     </footer>
     <script src="../contenedor js/horario.js"></script>
-    
+    <script src="../contenedor js/logout.js"></script>
 </body>
 
 </html>
